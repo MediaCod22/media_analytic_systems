@@ -1,0 +1,7 @@
+Инструмент,GitHub звёзды,Форки,Назначение,Язык,Применение в DSS,Репозиторий
+Sherlock,73830,8769,Поиск аккаунтов по username в 400+ соцсетях,Python,Соцмедиа-разведка; выявление цифрового следа,github.com/sherlock-project/sherlock
+awesome-osint,25343,3471,Кураторский список OSINT-инструментов,-,Ресурс для исследователей,github.com/jivoi/awesome-osint
+SpiderFoot,17007,2853,Автоматизация OSINT; визуализация связей,Python,Threat intelligence; анализ угроз,github.com/smicallef/spiderfoot
+Twint,16347,2776,Twitter scraping без API,Python,Анализ общественного мнения,github.com/twintproject/twint
+theHarvester,15849,2441,Сбор email; subdomains; имён,Python,Корпоративная разведка,github.com/laramies/theHarvester
+Obsei,1382,177,AI-powered social listening,Python,Brand monitoring; алертинг,github.com/obsei/obsei
