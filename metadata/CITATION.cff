@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Media Analytics Systems Research Data Repository"
+message: "If you use this dataset or methodology package, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Vodopetov"
+    given-names: "Sergey Vyacheslavovich"
+    orcid: "https://orcid.org/0000-0002-5237-4464"
+year: 2026
+repository-code: "https://github.com/MediaCod22/media_analytic_systems"
+abstract: "Open Science companion package for a comparative scientometric study of media analytics systems and their integration with decision support systems."
+keywords:
+  - media analytics
+  - decision support systems
+  - media monitoring
+  - OSINT
+  - PRISMA
+  - open science
+  - scientometrics
+license: MIT

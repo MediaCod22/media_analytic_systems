@@ -1,0 +1,10 @@
+metric,value,notes
+primary_records_identified,804,Первичная совокупная выдача по трем контурам
+final_analytical_sample,327,Итоговая выборка после удаления дубликатов и скрининга
+google_scholar_sample,112,Международный контур
+rinc_sample,95,Российский контур
+cnki_sample,120,Китайский контур
+expanded_russian_array,477,Дополнительный массив РИНЦ для углубленного анализа
+cohen_kappa_thematic,0.84,Согласованность тематической классификации
+cohen_kappa_dss,0.91,Согласованность определения DSS-связи
+dss_gap_china_russia,4.4,35% / 8% rounded

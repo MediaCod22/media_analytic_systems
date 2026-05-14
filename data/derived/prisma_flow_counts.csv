@@ -1,0 +1,12 @@
+stage,count,source,notes
+identified,804,article,Первичный поиск по Google Scholar, РИНЦ/eLibrary и CNKI
+duplicates_removed,,not_disclosed,Требует восстановления из рабочих таблиц
+screened,,not_disclosed,Требует восстановления из рабочих таблиц
+excluded_title_abstract,,not_disclosed,Требует восстановления из рабочих таблиц
+eligibility_assessed,,not_disclosed,Требует восстановления из рабочих таблиц
+excluded_full_text,,not_disclosed,Требует восстановления из рабочих таблиц
+included_total,327,article,Итоговая аналитическая выборка
+included_google_scholar,112,article,Международный контур
+included_rinc,95,article,Российский контур
+included_cnki,120,article,Китайский контур
+additional_russian_array,477,article,Расширенный российский массив

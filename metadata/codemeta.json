@@ -1,0 +1,15 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "media_analytic_systems open science validation scripts",
+  "description": "Validation helpers for aggregated tables in the Media Analytics Systems Open Science package.",
+  "codeRepository": "https://github.com/MediaCod22/media_analytic_systems",
+  "programmingLanguage": "Python",
+  "author": {
+    "@type": "Person",
+    "givenName": "Sergey Vyacheslavovich",
+    "familyName": "Vodopetov",
+    "identifier": "https://orcid.org/0000-0002-5237-4464"
+  },
+  "license": "https://spdx.org/licenses/MIT"
+}

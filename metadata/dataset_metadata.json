@@ -1,0 +1,36 @@
+{
+  "title": "Media Analytics Systems: Open Science Companion Dataset",
+  "description": "Aggregated data, PRISMA protocol, codebook and reproducibility materials for a comparative study of media analytics systems and DSS integration.",
+  "creator": {
+    "name": "Sergey V. Vodopetov",
+    "orcid": "0000-0002-5237-4464"
+  },
+  "repository": "https://github.com/MediaCod22/media_analytic_systems",
+  "date_created": "2026-05-14",
+  "language": ["ru", "en", "zh"],
+  "temporal_coverage": "2019-2025",
+  "databases": ["Google Scholar", "eLibrary/RINC", "CNKI"],
+  "sample": {
+    "identified_records": 804,
+    "final_analytical_sample": 327,
+    "google_scholar": 112,
+    "rinc": 95,
+    "cnki": 120,
+    "expanded_russian_array": 477
+  },
+  "main_indicators": {
+    "system_mentions_percent": {
+      "google_scholar": 16,
+      "rinc": 33,
+      "cnki": 45
+    },
+    "dss_link_percent": {
+      "google_scholar": 13,
+      "rinc": 8,
+      "cnki": 35
+    },
+    "dss_gap_china_russia": 4.4
+  },
+  "license": "MIT",
+  "access_rights": "open aggregated data; raw exports may be restricted by source database terms of use"
+}
