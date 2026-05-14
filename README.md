@@ -1,68 +1,58 @@
 # Media Analytics Systems — Research Data Repository
 
-> Репозиторий данных исследования «Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений»
-> Полный реестр **52 инструментов медиааналитики** с весами упоминания по научным контурам
+> **Research:** «Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений»
+> 
+> **Author:** Sergey V. Vodopetov, PhD (RUDN University, Moscow)
+> 
+> **ORCID:** [0000-0002-5237-4464](https://orcid.org/0000-0002-5237-4464) | **RSCI ID:** 835749 | **SPIN:** 5530-2581
 
 [![Open Science](https://img.shields.io/badge/Open%20Science-FAIR-blue)](https://www.go-fair.org/fair-principles/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--5237--4464-green)](https://orcid.org/0000-0002-5237-4464)
 
 ---
 
-## 🎯 Research Summary
+## 📖 About This Research / О исследовании
 
-This repository accompanies the article *«Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений»* and provides:
+### What We Studied / Что исследовалось
 
-- **Complete methodology** (PRISMA protocol, search strategy, codebook)
-- **Full analytical corpus** statistics and derived tables
-- **Comprehensive tools registry** — 52 media analytics systems with frequency weights
-- **Reproducible scripts** for data validation
-- **Open Science compliance** documentation
+This study examines the transformation of media analytics systems from monitoring tools into **Decision Support Infrastructure**. We analyzed how media data workflows evolve from simple measurement to predictive analytics across three academic discourses: **Russian, International (English), and Chinese**.
+
+**Key question:** Why does Russia demonstrate strong media measurement and monitoring capabilities (33% of publications mention systems), yet only **8%** explicitly connect them to decision-making — compared to **35%** in China?
+
+### Research Design / Дизайн исследования
+
+- **Corpus:** 804 publications → 327 final analytical sample (PRISMA protocol)
+- **Databases:** Google Scholar (international), eLibrary/РИНЦ (Russian), CNKI (Chinese)
+- **Period:** 2019–2024 (dynamics), 2019–2025 (thematic scope)
+- **Extended corpus:** 477 additional Russian publications for deeper analysis
+- **Coding:** Thematic analysis (Braun & Clarke) + OSINT methodology
+- **Reliability:** Cohen's Kappa = 0.84 (thematic), 0.91 (DSS-link)
+
+### Main Finding / Главный результат
+
+Russia leads in **media measurement infrastructure** (Mediascope as national standard) and **national media coverage** (Brand Analytics, СКАН). However, the gap to China in **DSS institutionalization** is **4.4×** (8% vs 35%). This is not technological lag — it's an **organizational and methodological barrier** preventing transition from data collection to decision-making.
+
+### Five Analytical Modes / Пять режимов аналитики
+
+| Mode | Russian Strength | International | Chinese | What It Produces |
+|------|-----------------|---------------|---------|-----------------|
+| **1. Media Measurement** | Mediascope (national panel) | Nielsen | — | Attention, reach, contact |
+| **2. National Media Coverage** | Brand Analytics, СКАН | Factiva, LexisNexis | Yuqing platforms | System observation, narratives |
+| **3. OSINT / Data Journalism** | OSINT + BA/СКАН | GDELT + tools | Yuqing analysis practices | Event reconstruction |
+| **4. Support / Predictive** | Талисман, risk analytics | Signal AI, Dataminr | Sina Yuqing / Wisers | Scenarios, early warning |
+| **5. AI-Native Layer** | Research LLM pipelines | Dataminr, Signal AI | Midu / LLM reporting | Signal automation |
 
 ---
 
-## 📊 Key Results at a Glance
+## 📊 Complete Tools Registry (52 Systems)
 
-| Metric | Value |
-|--------|-------|
-| Primary search results | 804 publications |
-| Final analytical sample | 327 publications |
-| Tools identified | **52 systems** |
-| Russian tools | 18 |
-| International tools | 24 |
-| Chinese tools | 10 |
-| DSS-link gap Russia/China | **4.4×** (8% vs 35%) |
+**[→ View Full Registry with Weights](TOOLS_REGISTRY.md)**
 
----
-
-## 🔧 Complete Tools Registry (52 Systems)
-
-### Quick Stats by Mode
-
-| Mode | Count | Top Tools |
-|------|-------|-----------|
-| Медиаизмерения | 2 | Mediascope (0.85), Nielsen (0.82) |
-| Национальное медиапокрытие | 34 | Brand Analytics (0.72), Factiva (0.64), LexisNexis (0.61) |
-| OSINT / data journalism | 5 | GDELT (0.38), Traackr (0.18), Onalytica (0.16) |
-| Support / predictive analytics | 7 | Dataminr (0.45), Signal AI (0.42), Sprinklr (0.44) |
-| AI-native layer | 4 | Midu (0.56), NetBase Quid (0.39) |
-
-### Top 10 by Weight
-
-| Rank | Tool | Contour | Weight |
-|------|------|---------|--------|
-| 1 | Mediascope | 🇷🇺 Russia | 0.85 |
-| 2 | Nielsen | 🌍 International | 0.82 |
-| 3 | Brand Analytics | 🇷🇺 Russia | 0.72 |
-| 4 | СКАН-Интерфакс | 🇷🇺 Russia | 0.68 |
-| 5 | Factiva | 🌍 International | 0.64 |
-| 6 | LexisNexis | 🌍 International | 0.61 |
-| 7 | Brandwatch | 🌍 International | 0.58 |
-| 8 | Dataminr | 🌍 International | 0.45 |
-| 9 | Sprinklr | 🌍 International | 0.44 |
-| 10 | Cision | 🌍 International | 0.49 |
-
-**[→ View Full Registry (52 tools)](TOOLS_REGISTRY.md)**
+| Contour | Count | Key Systems |
+|---------|-------|-------------|
+| 🇷🇺 Russian | 18 | Mediascope, Brand Analytics, СКАН, Kribrum, YouScan, IQBuzz, Талисман, Semantrum |
+| 🌍 International | 24 | Nielsen, Factiva, LexisNexis, Brandwatch, Meltwater, Sprinklr, GDELT, Signal AI, Dataminr |
+| 🇨🇳 Chinese | 10 | Midu, Sina Yuqing, Wisers, Qingbo, People's Daily Yuqing |
 
 ---
 
@@ -70,39 +60,53 @@ This repository accompanies the article *«Режимы аналитическо
 
 ```
 media_analytic_systems/
-├── README.md                              # This file
-├── TOOLS_REGISTRY.md                      # Full tools registry with methodology
+├── README.md                              # This file — overview + research context
+├── README_OPEN_SCIENCE.md                 # Companion to Open Science package
+├── TOOLS_REGISTRY.md                      # Full registry: 52 tools with weights
 ├── CITATION.cff                           # Citation metadata
 ├── LICENSE                                # CC BY 4.0
+│
 ├── data/
 │   ├── derived/
-│   │   ├── publication_statistics.csv     # Corpus stats
-│   │   ├── dss_comparison.csv             # DSS-link comparison
+│   │   ├── publication_statistics.csv     # Corpus-level stats
+│   │   ├── dss_comparison.csv             # DSS-link by contour
 │   │   ├── analytical_modes_typology.csv  # Mode classification
-│   │   ├── prisma_flow_counts.csv         # PRISMA flow
-│   │   └── tools_registry_full.csv        # ⭐ 52 tools with weights
-│   └── raw_placeholder/
-│       └── README.md
+│   │   ├── prisma_flow_counts.csv         # PRISMA selection stages ⭐
+│   │   ├── tools_registry_full.csv        # 52 tools with weights
+│   │   └── intercoder_reliability.csv     # Cohen's Kappa results ⭐
+│   └── processed/
+│       └── master_publications_coded.csv  # ⭐ Master dataset (anonymized)
+│
 ├── tables/
 │   ├── table_1_comparative_sample.csv     # Table 1 from article
 │   ├── table_2_analytical_modes.csv       # Table 2 from article
-│   └── table_3_tools_registry.csv         # ⭐ Tools summary for article
+│   ├── table_3_tools_registry.csv         # Tools summary
+│   └── prisma_flow_table.csv              # ⭐ PRISMA stages
+│
 ├── methodology/
-│   ├── prisma_protocol.md
-│   ├── search_strategy.md
-│   ├── codebook.md
+│   ├── prisma_protocol.md                 # PRISMA 2020 protocol
+│   ├── search_strategy.md                 # Search strings per database
+│   ├── codebook.md                        # ⭐ Coding definitions & rules
 │   ├── reproducibility_protocol.md
 │   ├── limitations_and_bias.md
-│   └── tools_identification_protocol.md   # ⭐ How 52 tools were identified
+│   ├── tools_identification_protocol.md   # How 52 tools were identified
+│   └── why_h_index_was_not_used.md        # ⭐ Methodological disclaimer
+│
+├── figures/
+│   └── prisma_flow_diagram.png            # ⭐ PRISMA flowchart
+│
 ├── results/
 │   ├── key_findings_open_science.md
 │   └── interpretation_notes.md
+│
 ├── scripts/
-│   └── validate_tables.py
+│   └── validate_tables.py                 # Validation script
+│
 ├── metadata/
 │   ├── CITATION.cff
 │   ├── codemeta.json
 │   └── dataset_metadata.json
+│
 └── docs/
     ├── open_science_checklist.md
     └── github_release_notes.md
@@ -110,36 +114,35 @@ media_analytic_systems/
 
 ---
 
-## 🔬 Methodology
+## 🔬 Methodology Highlights
 
 ### PRISMA Protocol
-Systematic literature review following PRISMA 2020 guidelines. See `methodology/prisma_protocol.md`.
+Systematic literature selection from three databases. See `methodology/prisma_protocol.md` for full flow.
 
-### Analytical Modes Typology
+**Key numbers:**
+- **804** → initial search results
+- **327** → final analytical sample (112 Google Scholar, 95 РИНЦ, 120 CNKI)
+- **477** → extended Russian corpus
 
-| Mode | Russian Example | International Example | Chinese Example | Output |
-|------|-----------------|---------------------|-----------------|--------|
-| **Медиаизмерения** | Mediascope | Nielsen | — | Attention, reach, contact |
-| **Национальное медиапокрытие** | Brand Analytics, СКАН | Factiva, LexisNexis | Yuqing-платформы | System observation, narratives |
-| **OSINT / data journalism** | OSINT + BA/СКАН | GDELT + OSINT tools | Yuqing-анализ | Event reconstruction |
-| **Support / predictive analytics** | Талисман, risk-аналитика | Signal AI, Dataminr | Sina Yuqing / Wisers | Scenarios, early warning |
-| **AI-native layer** | Research LLM pipelines | Dataminr, Signal AI | Midu / LLM reporting | Signal automation |
+### Coding Reliability / Надёжность кодирования
 
-### Coding Reliability
-- **Thematic classification:** Cohen's Kappa = **0.84**
-- **DSS-link determination:** Cohen's Kappa = **0.91**
+Verified by **3 independent coders**:
 
----
+| Dimension | Cohen's Kappa | Interpretation |
+|-----------|---------------|----------------|
+| Thematic classification | **0.84** | Almost perfect |
+| DSS-link determination | **0.91** | Almost perfect |
+| Mode assignment | **0.79** | Substantial |
 
-## 🛠️ Tools Identification Protocol
+See: `data/derived/intercoder_reliability.csv` and `methodology/codebook.md`
 
-The registry of 52 tools was compiled through:
-1. **Automated extraction** from 327 analytical publications + 477 extended Russian corpus
-2. **Manual verification** against real product websites and documentation
-3. **Expert classification** by 3 independent coders
-4. **Weight normalization** by contour (Russian/International/Chinese)
+### Why We Don't Use H-Index for Systems / Почему h-index не используется
 
-See: `methodology/tools_identification_protocol.md`
+> ⚠️ **Important methodological note:** In the final version, **h-index of platforms is NOT used** as a quality indicator. Initial bibliometric evaluations are preserved only as auxiliary heuristics for scientific visibility and do NOT participate in main conclusions.
+> 
+> Rationale: h-index measures **author productivity**, not **analytical power of tools**. Applying it to software platforms is methodologically incorrect.
+>
+> See full explanation: `methodology/why_h_index_was_not_used.md`
 
 ---
 
@@ -149,23 +152,15 @@ See: `methodology/tools_identification_protocol.md`
 
 ---
 
-## 👤 Author
-
-**Sergey Vyacheslavovich Vodopetov**
-- ORCID: [0000-0002-5237-4464](https://orcid.org/0000-0002-5237-4464)
-- RSCI Author ID: 835749 | SPIN: 5530-2581
-- RUDN University, Moscow
-
----
-
 ## 📚 How to Cite
 
 ### APA 7
 Vodopetov, S. V. (2025). *Modes of analytical work with media data: From measurement to decision support*. Vestnik PGU. https://github.com/MediaCod22/media_analytic_systems
 
-### ГОСТ
+### ГОСТ Р 7.0.5-2008
 Водопетов С.В. Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений // Вестник ПГУ. — 2025. — № X. — С. XX–XX.
 
 ---
 
 *Repository created: 2026-05-14 | Last updated: 2026-05-14*
+*This repository follows FAIR principles and PRISMA 2020 guidelines*

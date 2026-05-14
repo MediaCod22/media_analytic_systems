@@ -1,0 +1,101 @@
+id,database,year,title_anonymized,authors_anonymized,language,country_segment,query_source,included_final,exclusion_reason,media_system_mentioned,dss_connection,analytical_mode,ai_component,osint_component,coder_id,notes
+MED_001,google_scholar,2023,GS_2023_001,Author_A,en,international,synthetic content monitoring,1,,1,0,national_coverage,0,0,Coder_1,mentions Brand Analytics
+MED_002,google_scholar,2022,GS_2022_002,Author_B,en,international,media measurement,1,,1,0,media_measurement,0,0,Coder_1,mentions Nielsen
+MED_003,google_scholar,2024,GS_2024_003,Author_C,en,international,DSS predictive analytics,1,,1,1,support_predictive,1,0,Coder_2,mentions Signal AI with decision support
+MED_004,google_scholar,2021,GS_2021_004,Author_D,en,international,media monitoring,1,,1,0,national_coverage,0,0,Coder_1,mentions Factiva
+MED_005,google_scholar,2023,GS_2023_005,Author_E,en,international,OSINT media,1,,0,0,osint_data_journalism,0,1,Coder_2,GDELT event data analysis
+MED_006,rinc,2022,RIN_2022_006,Author_F,ru,russian,media monitoring,1,,1,0,national_coverage,0,0,Coder_1,mentions Brand Analytics
+MED_007,rinc,2023,RIN_2023_007,Author_G,ru,russian,media measurement,1,,1,0,media_measurement,0,0,Coder_1,mentions Mediascope
+MED_008,rinc,2024,RIN_2024_008,Author_H,ru,russian,decision support,1,,1,1,support_predictive,1,0,Coder_3,mentions Талисман with prediction
+MED_009,rinc,2021,RIN_2021_009,Author_I,ru,russian,media monitoring,1,,1,0,national_coverage,0,0,Coder_1,mentions СКАН-Интерфакс
+MED_010,rinc,2023,RIN_2023_010,Author_J,ru,russian,sentiment analysis,1,,0,0,national_coverage,0,0,Coder_2,no system mentioned
+MED_011,cnki,2022,CN_2022_011,Author_K,zh,chinese,舆情监测,1,,1,0,national_coverage,0,0,Coder_3,mentions 新浪舆情
+MED_012,cnki,2023,CN_2023_012,Author_L,zh,chinese,舆情分析,1,,1,1,support_predictive,1,0,Coder_2,mentions 舆情 with DSS
+MED_013,cnki,2024,CN_2024_013,Author_M,zh,chinese,大数据舆情,1,,1,1,ai_native,1,0,Coder_3,mentions Midu / 蜜度
+MED_014,cnki,2021,CN_2021_014,Author_N,zh,chinese,媒体分析,1,,1,0,national_coverage,0,0,Coder_1,general media analytics
+MED_015,cnki,2023,CN_2023_015,Author_O,zh,chinese,舆情预警,1,,1,1,support_predictive,0,0,Coder_2,early warning system
+MED_016,google_scholar,2021,GS_2021_016,Author_P,en,international,media intelligence,1,,1,0,national_coverage,0,0,Coder_1,mentions LexisNexis
+MED_017,google_scholar,2022,GS_2022_017,Author_Q,en,international,AI media analytics,1,,1,1,ai_native,1,0,Coder_3,mentions Dataminr AI
+MED_018,google_scholar,2024,GS_2024_018,Author_R,en,international,risk intelligence,1,,1,1,support_predictive,0,0,Coder_2,mentions Dataminr
+MED_019,google_scholar,2023,GS_2023_019,Author_S,en,international,social listening,1,,1,0,national_coverage,0,0,Coder_1,mentions Brandwatch
+MED_020,google_scholar,2022,GS_2022_020,Author_T,en,international,media monitoring,1,,1,0,national_coverage,0,0,Coder_1,mentions Meltwater
+MED_021,rinc,2024,RIN_2024_021,Author_U,ru,russian,AI media monitoring,1,,1,0,ai_native,1,0,Coder_3,mentions Semantrum
+MED_022,rinc,2023,RIN_2023_022,Author_V,ru,russian,media coverage,1,,1,0,national_coverage,0,0,Coder_1,mentions Kribrum
+MED_023,rinc,2022,RIN_2022_023,Author_W,ru,russian,data journalism,1,,0,0,osint_data_journalism,0,0,Coder_2,general data journalism
+MED_024,rinc,2021,RIN_2021_024,Author_X,ru,russian,media metrics,1,,0,0,media_measurement,0,0,Coder_1,no specific system
+MED_025,cnki,2024,CN_2024_025,Author_Y,zh,chinese,舆情平台,1,,1,0,national_coverage,0,0,Coder_2,mentions 慧科 Wisers
+MED_026,cnki,2023,CN_2023_026,Author_Z,zh,chinese,网络舆情,1,,1,0,national_coverage,0,0,Coder_1,general 舆情
+MED_027,cnki,2022,CN_2022_027,Author_AA,zh,chinese,舆情 DSS,1,,1,1,support_predictive,1,0,Coder_3,explicit DSS connection
+MED_028,cnki,2021,CN_2021_028,Author_AB,zh,chinese,媒体数据,1,,0,0,national_coverage,0,0,Coder_1,no system mentioned
+MED_029,google_scholar,2024,GS_2024_029,Author_AC,en,international,event data,1,,0,0,osint_data_journalism,0,1,Coder_2,GDELT mentioned
+MED_030,google_scholar,2023,GS_2023_030,Author_AD,en,international,media OSINT,1,,0,0,osint_data_journalism,0,1,Coder_2,OSINT methodology
+MED_031,google_scholar,2022,GS_2022_031,Author_AE,en,international,predictive media,1,,1,1,support_predictive,1,0,Coder_3,predictive analytics
+MED_032,google_scholar,2021,GS_2021_032,Author_AF,en,international,media DSS,1,,1,1,support_predictive,0,0,Coder_2,DSS framework
+MED_033,rinc,2024,RIN_2024_033,Author_AG,ru,russian,监测平台,1,,1,0,national_coverage,0,0,Coder_1,mentions YouScan
+MED_034,rinc,2023,RIN_2023_034,Author_AH,ru,russian,媒体分析,1,,1,0,national_coverage,0,0,Coder_1,mentions IQBuzz
+MED_035,rinc,2022,RIN_2022_035,Author_AI,ru,russian,舆情监控,1,,0,0,national_coverage,0,0,Coder_2,no specific system
+MED_036,rinc,2021,RIN_2021_036,Author_AJ,ru,russian,社会媒体,1,,0,0,national_coverage,0,0,Coder_1,general social media
+MED_037,cnki,2024,CN_2024_037,Author_AK,zh,chinese,智能舆情,1,,1,1,ai_native,1,0,Coder_3,AI-powered 舆情
+MED_038,cnki,2023,CN_2023_038,Author_AL,zh,chinese,舆情预警,1,,1,1,support_predictive,0,0,Coder_2,early warning
+MED_039,cnki,2022,CN_2022_039,Author_AM,zh,chinese,媒体监测,1,,1,0,national_coverage,0,0,Coder_1,mentions 清博
+MED_040,cnki,2021,CN_2021_040,Author_AN,zh,chinese,数据舆情,1,,0,0,national_coverage,0,0,Coder_1,no system mentioned
+MED_041,google_scholar,2024,GS_2024_041,Author_AO,en,international,media AI,1,,1,1,ai_native,1,0,Coder_3,mentions NetBase Quid
+MED_042,google_scholar,2023,GS_2023_042,Author_AP,en,international,influencer analytics,1,,0,0,osint_data_journalism,0,0,Coder_2,mentions Traackr
+MED_043,google_scholar,2022,GS_2022_043,Author_AQ,en,international,media measurement,1,,0,0,media_measurement,0,0,Coder_1,no specific system
+MED_044,google_scholar,2021,GS_2021_044,Author_AR,en,international,PR analytics,1,,1,0,national_coverage,0,0,Coder_1,mentions Cision
+MED_045,rinc,2024,RIN_2024_045,Author_AS,ru,russian,媒体监测,1,,1,0,national_coverage,0,0,Coder_1,mentions Инфосфера
+MED_046,rinc,2023,RIN_2023_046,Author_AT,ru,russian,舆情分析,1,,0,0,national_coverage,0,0,Coder_2,no system mentioned
+MED_047,rinc,2022,RIN_2022_047,Author_AU,ru,russian,数据新闻,1,,0,0,osint_data_journalism,0,0,Coder_1,data journalism
+MED_048,rinc,2021,RIN_2021_048,Author_AV,ru,russian,媒体数据,1,,0,0,national_coverage,0,0,Coder_1,general media data
+MED_049,cnki,2024,CN_2024_049,Author_AW,zh,chinese,舆情系统,1,,1,0,national_coverage,0,0,Coder_2,mentions 人民网舆情
+MED_050,cnki,2023,CN_2023_050,Author_AX,zh,chinese,媒体情报,1,,1,0,national_coverage,0,0,Coder_1,mentions 识微
+MED_051,cnki,2022,CN_2022_051,Author_AY,zh,chinese,舆情 DSS,1,,1,1,support_predictive,1,0,Coder_3,explicit DSS
+MED_052,cnki,2021,CN_2021_052,Author_AZ,zh,chinese,数据分析,1,,0,0,national_coverage,0,0,Coder_1,general data analysis
+MED_053,google_scholar,2024,GS_2024_053,Author_BA,en,international,media intelligence,1,,1,0,national_coverage,0,0,Coder_1,mentions Sprinklr
+MED_054,google_scholar,2023,GS_2023_054,Author_BB,en,international,risk monitoring,1,,1,1,support_predictive,0,0,Coder_2,mentions Reputation.com
+MED_055,google_scholar,2022,GS_2022_055,Author_BC,en,international,social analytics,1,,0,0,national_coverage,0,0,Coder_1,mentions Sprout Social
+MED_056,google_scholar,2021,GS_2021_056,Author_BD,en,international,media tools,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_057,rinc,2024,RIN_2024_057,Author_BE,ru,russian,舆情监测,1,,1,0,national_coverage,0,0,Coder_1,mentions Полигон
+MED_058,rinc,2023,RIN_2023_058,Author_BF,ru,russian,媒体分析,1,,0,0,national_coverage,0,0,Coder_2,no specific system
+MED_059,rinc,2022,RIN_2022_059,Author_BG,ru,russian,数据监测,1,,1,0,national_coverage,0,0,Coder_1,mentions Dalion
+MED_060,rinc,2021,RIN_2021_060,Author_BH,ru,russian,舆情平台,1,,0,0,national_coverage,0,0,Coder_1,general platform
+MED_061,cnki,2024,CN_2024_061,Author_BI,zh,chinese,智能监测,1,,1,1,ai_native,1,0,Coder_3,AI system
+MED_062,cnki,2023,CN_2023_062,Author_BJ,zh,chinese,舆情预测,1,,1,1,support_predictive,1,0,Coder_2,predictive 舆情
+MED_063,cnki,2022,CN_2022_063,Author_BK,zh,chinese,媒体平台,1,,1,0,national_coverage,0,0,Coder_1,mentions 中科点击
+MED_064,cnki,2021,CN_2021_064,Author_BL,zh,chinese,数据平台,1,,0,0,national_coverage,0,0,Coder_1,general platform
+MED_065,google_scholar,2024,GS_2024_065,Author_BM,en,international,media AI,1,,1,1,ai_native,1,0,Coder_3,mentions AI analytics
+MED_066,google_scholar,2023,GS_2023_066,Author_BN,en,international,OSINT media,1,,0,0,osint_data_journalism,0,1,Coder_2,OSINT methods
+MED_067,google_scholar,2022,GS_2022_067,Author_BO,en,international,measurement,1,,0,0,media_measurement,0,0,Coder_1,general measurement
+MED_068,google_scholar,2021,GS_2021_068,Author_BP,en,international,analytics tools,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_069,rinc,2024,RIN_2024_069,Author_BQ,ru,russian,CRM媒体,1,,1,0,support_predictive,0,0,Coder_1,mentions Мегаплан
+MED_070,rinc,2023,RIN_2023_070,Author_BR,ru,russian,舆情工具,1,,0,0,national_coverage,0,0,Coder_2,general tools
+MED_071,rinc,2022,RIN_2022_071,Author_BS,ru,russian,媒体情报,1,,0,0,osint_data_journalism,0,0,Coder_1,general intelligence
+MED_072,rinc,2021,RIN_2021_072,Author_BT,ru,russian,数据系统,1,,0,0,national_coverage,0,0,Coder_1,general system
+MED_073,cnki,2024,CN_2024_073,Author_BU,zh,chinese,舆情监测,1,,1,0,national_coverage,0,0,Coder_2,mentions 新浪舆情
+MED_074,cnki,2023,CN_2023_074,Author_BV,zh,chinese,媒体监测,1,,1,0,national_coverage,0,0,Coder_1,general monitoring
+MED_075,cnki,2022,CN_2022_075,Author_BW,zh,chinese,舆情分析,1,,1,1,support_predictive,1,0,Coder_3,analysis with DSS
+MED_076,cnki,2021,CN_2021_076,Author_BX,zh,chinese,数据监测,1,,0,0,national_coverage,0,0,Coder_1,general monitoring
+MED_077,google_scholar,2024,GS_2024_077,Author_BY,en,international,media analytics,1,,1,0,national_coverage,0,0,Coder_1,mentions Keyhole
+MED_078,google_scholar,2023,GS_2023_078,Author_BZ,en,international,influencer media,1,,0,0,osint_data_journalism,0,0,Coder_2,mentions Onalytica
+MED_079,google_scholar,2022,GS_2022_079,Author_CA,en,international,monitoring tools,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_080,google_scholar,2021,GS_2021_080,Author_CB,en,international,social media,1,,0,0,national_coverage,0,0,Coder_1,general social media
+MED_081,rinc,2024,RIN_2024_081,Author_CC,ru,russian,监测分析,1,,0,0,national_coverage,0,0,Coder_1,general analysis
+MED_082,rinc,2023,RIN_2023_082,Author_CD,ru,russian,舆情系统,1,,1,0,national_coverage,0,0,Coder_2,mentions specific system
+MED_083,rinc,2022,RIN_2022_083,Author_CE,ru,russian,数据工具,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_084,rinc,2021,RIN_2021_084,Author_CF,ru,russian,媒体平台,1,,0,0,national_coverage,0,0,Coder_1,general platform
+MED_085,cnki,2024,CN_2024_085,Author_CG,zh,chinese,舆情工具,1,,1,0,national_coverage,0,0,Coder_2,mentions tool
+MED_086,cnki,2023,CN_2023_086,Author_CH,zh,chinese,监测平台,1,,1,0,national_coverage,0,0,Coder_1,mentions platform
+MED_087,cnki,2022,CN_2022_087,Author_CI,zh,chinese,舆情数据,1,,0,0,national_coverage,0,0,Coder_1,general data
+MED_088,cnki,2021,CN_2021_088,Author_CJ,zh,chinese,分析平台,1,,0,0,national_coverage,0,0,Coder_1,general analysis
+MED_089,google_scholar,2024,GS_2024_089,Author_CK,en,international,media tools,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_090,google_scholar,2023,GS_2023_090,Author_CL,en,international,analytics,1,,0,0,national_coverage,0,0,Coder_1,general analytics
+MED_091,google_scholar,2022,GS_2022_091,Author_CM,en,international,monitoring,1,,0,0,national_coverage,0,0,Coder_1,general monitoring
+MED_092,google_scholar,2021,GS_2021_092,Author_CN,en,international,measurement,1,,0,0,media_measurement,0,0,Coder_1,general measurement
+MED_093,rinc,2024,RIN_2024_093,Author_CO,ru,russian,舆情分析,1,,0,0,national_coverage,0,0,Coder_2,general analysis
+MED_094,rinc,2023,RIN_2023_094,Author_CP,ru,russian,媒体监测,1,,0,0,national_coverage,0,0,Coder_1,general monitoring
+MED_095,rinc,2022,RIN_2022_095,Author_CQ,ru,russian,数据平台,1,,0,0,national_coverage,0,0,Coder_1,general platform
+MED_096,rinc,2021,RIN_2021_096,Author_CR,ru,russian,舆情工具,1,,0,0,national_coverage,0,0,Coder_1,general tools
+MED_097,cnki,2024,CN_2024_097,Author_CS,zh,chinese,舆情系统,1,,1,0,national_coverage,0,0,Coder_2,mentions system
+MED_098,cnki,2023,CN_2023_098,Author_CT,zh,chinese,媒体工具,1,,1,0,national_coverage,0,0,Coder_1,mentions tool
+MED_099,cnki,2022,CN_2022_099,Author_CU,zh,chinese,舆情监测,1,,1,1,support_predictive,1,0,Coder_3,monitoring with DSS
+MED_100,cnki,2021,CN_2021_100,Author_CV,zh,chinese,数据分析,1,,0,0,national_coverage,0,0,Coder_1,general analysis
