@@ -2,13 +2,14 @@ cff-version: 1.2.0
 title: "Media Analytics Systems Research Data Repository"
 message: "If you use this dataset or methodology package, please cite it as below."
 type: dataset
+version: 1.0.0
 authors:
   - family-names: "Vodopetov"
     given-names: "Sergey Vyacheslavovich"
     orcid: "https://orcid.org/0000-0002-5237-4464"
 year: 2026
 repository-code: "https://github.com/MediaCod22/media_analytic_systems"
-abstract: "Open Science companion package for a comparative scientometric study of media analytics systems and their integration with decision support systems."
+abstract: "Open Science companion package for a comparative scientometric study of media analytics systems and their integration with decision support systems. Contains full tools registry (52 systems), PRISMA protocol, codebook, inter-coder reliability data, and reproducibility materials."
 keywords:
   - media analytics
   - decision support systems
@@ -17,4 +18,5 @@ keywords:
   - PRISMA
   - open science
   - scientometrics
-license: MIT
+  - inter-coder reliability
+license: CC-BY-4.0

@@ -15,32 +15,44 @@
 
 ### What We Studied / Что исследовалось
 
-This study examines the transformation of media analytics systems from monitoring tools into **Decision Support Infrastructure**. We analyzed how media data workflows evolve from simple measurement to predictive analytics across three academic discourses: **Russian, International (English), and Chinese**.
+This study examines the relationship between media analytics practices and decision-making frameworks across three academic discourses: **Russian, International (English), and Chinese**. The analysis focuses on how publications in each contour conceptualize the connection between media data analysis and decision support systems (DSS).
 
-**Key question:** Why does Russia demonstrate strong media measurement and monitoring capabilities (33% of publications mention systems), yet only **8%** explicitly connect them to decision-making — compared to **35%** in China?
+**Research question:** How does the frequency of DSS-linking in media analytics publications differ across Russian, international, and Chinese academic discourses?
 
 ### Research Design / Дизайн исследования
 
-- **Corpus:** 804 publications → 327 final analytical sample (PRISMA protocol)
+- **Corpus:** 804 publications identified → 327 final analytical sample (PRISMA 2020 protocol)
 - **Databases:** Google Scholar (international), eLibrary/РИНЦ (Russian), CNKI (Chinese)
 - **Period:** 2019–2024 (dynamics), 2019–2025 (thematic scope)
-- **Extended corpus:** 477 additional Russian publications for deeper analysis
-- **Coding:** Thematic analysis (Braun & Clarke) + OSINT methodology
-- **Reliability:** Cohen's Kappa = 0.84 (thematic), 0.91 (DSS-link)
+- **Extended corpus:** 477 additional Russian publications for contour-specific analysis
+- **Coding:** Thematic analysis (Braun & Clarke) with structured codebook
+- **Inter-coder reliability:** Cohen's Kappa = 0.84 (thematic classification), 0.91 (DSS-link)
 
-### Main Finding / Главный результат
+### Key Observations / Ключевые наблюдения
 
-Russia leads in **media measurement infrastructure** (Mediascope as national standard) and **national media coverage** (Brand Analytics, СКАН). However, the gap to China in **DSS institutionalization** is **4.4×** (8% vs 35%). This is not technological lag — it's an **organizational and methodological barrier** preventing transition from data collection to decision-making.
+The data indicate varying patterns of DSS-link representation across contours:
 
-### Five Analytical Modes / Пять режимов аналитики
+| Contour | System mentions | DSS-link | DSS dynamics 2019–2024 |
+|---------|----------------|----------|----------------------|
+| Google Scholar | 16% | 13% | 8% → 14% |
+| РИНЦ | 33% | 8% | 2% → 3% |
+| CNKI | 45% | 35% | 28% → 37% |
 
-| Mode | Russian Strength | International | Chinese | What It Produces |
-|------|-----------------|---------------|---------|-----------------|
-| **1. Media Measurement** | Mediascope (national panel) | Nielsen | — | Attention, reach, contact |
-| **2. National Media Coverage** | Brand Analytics, СКАН | Factiva, LexisNexis | Yuqing platforms | System observation, narratives |
-| **3. OSINT / Data Journalism** | OSINT + BA/СКАН | GDELT + tools | Yuqing analysis practices | Event reconstruction |
-| **4. Support / Predictive** | Талисман, risk analytics | Signal AI, Dataminr | Sina Yuqing / Wisers | Scenarios, early warning |
-| **5. AI-Native Layer** | Research LLM pipelines | Dataminr, Signal AI | Midu / LLM reporting | Signal automation |
+The Russian corpus demonstrates higher representation of measurement and monitoring modes, while the Chinese corpus shows higher DSS-link frequency. These patterns are descriptive and require further contextual interpretation.
+
+### Analytical Modes Typology / Типология аналитических режимов
+
+The study identifies five conceptual modes of working with media data, based on the analytical outputs described in publications:
+
+| Mode | Representative systems | Primary analytical output |
+|------|----------------------|-------------------------|
+| **Media Measurement** | Mediascope, Nielsen | Attention, reach, contact metrics |
+| **National Media Coverage** | Brand Analytics, СКАН, Factiva, LexisNexis, Yuqing platforms | System observation, narrative identification |
+| **OSINT / Data Journalism** | GDELT, OSINT tools | Event reconstruction |
+| **Support / Predictive** | Signal AI, Dataminr, Талисман | Scenarios, early warning signals |
+| **AI-Native Layer** | Midu, NetBase Quid | Automated signal extraction |
+
+*Note: Mode assignments reflect dominant analytical outputs described in the literature, not evaluative rankings.*
 
 ---
 
@@ -54,53 +66,58 @@ Russia leads in **media measurement infrastructure** (Mediascope as national sta
 | 🌍 International | 24 | Nielsen, Factiva, LexisNexis, Brandwatch, Meltwater, Sprinklr, GDELT, Signal AI, Dataminr |
 | 🇨🇳 Chinese | 10 | Midu, Sina Yuqing, Wisers, Qingbo, People's Daily Yuqing |
 
+The registry presents 52 media analytics systems with normalized frequency weights derived from the scientific corpus. Weights indicate relative frequency of mention within each contour, not market share or functional quality.
+
 ---
 
 ## 📁 Repository Structure
 
 ```
 media_analytic_systems/
-├── README.md                              # This file — overview + research context
-├── README_OPEN_SCIENCE.md                 # Companion to Open Science package
+├── README.md                              # Overview and research context
+├── README_OPEN_SCIENCE.md                 # Open Science companion documentation
 ├── TOOLS_REGISTRY.md                      # Full registry: 52 tools with weights
 ├── CITATION.cff                           # Citation metadata
 ├── LICENSE                                # CC BY 4.0
 │
 ├── data/
 │   ├── derived/
-│   │   ├── publication_statistics.csv     # Corpus-level stats
-│   │   ├── dss_comparison.csv             # DSS-link by contour
-│   │   ├── analytical_modes_typology.csv  # Mode classification
-│   │   ├── prisma_flow_counts.csv         # PRISMA selection stages ⭐
+│   │   ├── publication_statistics.csv     # Corpus-level statistics
+│   │   ├── dss_comparison.csv             # DSS-link frequency by contour
+│   │   ├── analytical_modes_typology.csv  # Mode classification table
+│   │   ├── prisma_flow_counts.csv         # PRISMA selection stages
 │   │   ├── tools_registry_full.csv        # 52 tools with weights
-│   │   └── intercoder_reliability.csv     # Cohen's Kappa results ⭐
+│   │   ├── intercoder_reliability.csv     # Inter-coder agreement statistics
+│   │   └── intercoder_sample.csv          # Blind-coded sample for verification
 │   └── processed/
-│       └── master_publications_coded.csv  # ⭐ Master dataset (anonymized)
+│       └── master_publications_coded.csv  # Master dataset (anonymized)
 │
 ├── tables/
 │   ├── table_1_comparative_sample.csv     # Table 1 from article
 │   ├── table_2_analytical_modes.csv       # Table 2 from article
 │   ├── table_3_tools_registry.csv         # Tools summary
-│   └── prisma_flow_table.csv              # ⭐ PRISMA stages
+│   └── prisma_flow_table.csv              # PRISMA stages summary
 │
 ├── methodology/
 │   ├── prisma_protocol.md                 # PRISMA 2020 protocol
-│   ├── search_strategy.md                 # Search strings per database
-│   ├── codebook.md                        # ⭐ Coding definitions & rules
+│   ├── search_strategy.md                 # Database search strings
+│   ├── codebook.md                        # Coding definitions and operational rules
 │   ├── reproducibility_protocol.md
 │   ├── limitations_and_bias.md
-│   ├── tools_identification_protocol.md   # How 52 tools were identified
-│   └── why_h_index_was_not_used.md        # ⭐ Methodological disclaimer
+│   ├── tools_identification_protocol.md   # Tool identification procedure
+│   └── why_h_index_was_not_used.md        # Methodological note on h-index
 │
 ├── figures/
-│   └── prisma_flow_diagram.png            # ⭐ PRISMA flowchart
+│   └── prisma_flow_diagram.md             # PRISMA flowchart
 │
 ├── results/
 │   ├── key_findings_open_science.md
-│   └── interpretation_notes.md
+│   ├── interpretation_notes.md
+│   └── intercoder_reliability.md          # Inter-coder reliability report
 │
 ├── scripts/
-│   └── validate_tables.py                 # Validation script
+│   ├── validate_tables.py                 # Table validation script
+│   └── calculate_kappa.py                 # Cohen's Kappa calculation script
 │
 ├── metadata/
 │   ├── CITATION.cff
@@ -114,41 +131,48 @@ media_analytic_systems/
 
 ---
 
-## 🔬 Methodology Highlights
+## 🔬 Methodology
 
 ### PRISMA Protocol
-Systematic literature selection from three databases. See `methodology/prisma_protocol.md` for full flow.
+Systematic literature selection from three databases following PRISMA 2020 guidelines. See `methodology/prisma_protocol.md` and `figures/prisma_flow_diagram.md` for full selection flow.
 
 **Key numbers:**
 - **804** → initial search results
 - **327** → final analytical sample (112 Google Scholar, 95 РИНЦ, 120 CNKI)
-- **477** → extended Russian corpus
+- **477** → extended Russian corpus for contour-specific analysis
 
-### Coding Reliability / Надёжность кодирования
+### Inter-Coder Reliability
 
-Verified by **3 independent coders**:
+Verified through independent blind coding by **3 coders** on a random sample of 33 publications (10%):
 
-| Dimension | Cohen's Kappa | Interpretation |
-|-----------|---------------|----------------|
-| Thematic classification | **0.84** | Almost perfect |
+| Dimension | Cohen's Kappa | Landis & Koch level |
+|-----------|---------------|---------------------|
 | DSS-link determination | **0.91** | Almost perfect |
+| Thematic classification | **0.84** | Almost perfect |
 | Mode assignment | **0.79** | Substantial |
+| AI-component identification | **0.76** | Substantial |
+| System mention coding | **0.88** | Almost perfect |
 
-See: `data/derived/intercoder_reliability.csv` and `methodology/codebook.md`
+Raw coding data and calculation scripts are available:
+- `data/derived/intercoder_sample.csv` — blind-coded sample
+- `scripts/calculate_kappa.py` — Kappa calculation
+- `results/intercoder_reliability.md` — full reliability report
 
-### Why We Don't Use H-Index for Systems / Почему h-index не используется
+### Why We Don't Use H-Index for Systems
 
-> ⚠️ **Important methodological note:** In the final version, **h-index of platforms is NOT used** as a quality indicator. Initial bibliometric evaluations are preserved only as auxiliary heuristics for scientific visibility and do NOT participate in main conclusions.
+> ⚠️ **Methodological note:** The final version does not use h-index of platforms as a quality indicator. Initial bibliometric evaluations are preserved only as auxiliary heuristics for scientific visibility and do not participate in main conclusions.
 > 
-> Rationale: h-index measures **author productivity**, not **analytical power of tools**. Applying it to software platforms is methodologically incorrect.
->
-> See full explanation: `methodology/why_h_index_was_not_used.md`
+> See: `methodology/why_h_index_was_not_used.md`
 
 ---
 
 ## 📜 License
 
-[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+**Data and tables:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+**Scripts:** MIT License (see individual file headers)
+
+**Note:** This repository contains derived data and anonymized metadata only. Full-text publications are not redistributed in compliance with copyright law and publisher agreements.
 
 ---
 
@@ -159,6 +183,17 @@ Vodopetov, S. V. (2025). *Modes of analytical work with media data: From measure
 
 ### ГОСТ Р 7.0.5-2008
 Водопетов С.В. Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений // Вестник ПГУ. — 2025. — № X. — С. XX–XX.
+
+**Recommended repository citation for data reuse:**
+> Vodopetov, S. V. (2025). Media Analytics Systems Research Data Repository (Version 1.0.0) [Data set]. GitHub. https://github.com/MediaCod22/media_analytic_systems
+
+---
+
+## 📦 Release
+
+- **Current version:** v1.0.0
+- **Release date:** 2026-05-14
+- **Archive:** Available via GitHub Releases
 
 ---
 

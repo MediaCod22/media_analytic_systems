@@ -11,5 +11,6 @@
     "familyName": "Vodopetov",
     "identifier": "https://orcid.org/0000-0002-5237-4464"
   },
-  "license": "https://spdx.org/licenses/MIT"
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "softwareVersion": "1.0.0"
 }

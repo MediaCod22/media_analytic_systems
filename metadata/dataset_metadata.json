@@ -31,6 +31,22 @@
     },
     "dss_gap_china_russia": 4.4
   },
-  "license": "MIT",
-  "access_rights": "open aggregated data; raw exports may be restricted by source database terms of use"
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "access_rights": "Open aggregated data; bibliographic metadata only. Full-text publications not redistributed per copyright law and publisher agreements.",
+  "intercoder_reliability": {
+    "coders": 3,
+    "sample_size": 33,
+    "cohens_kappa": {
+      "dss_link": 0.91,
+      "thematic_classification": 0.84,
+      "mode_assignment": 0.79
+    }
+  },
+  "tools_registry": {
+    "total_tools": 52,
+    "russian": 18,
+    "international": 24,
+    "chinese": 10
+  }
 }
