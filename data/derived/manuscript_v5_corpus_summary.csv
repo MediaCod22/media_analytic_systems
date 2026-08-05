@@ -1,0 +1,6 @@
+indicator,google_scholar,rinc,cnki,total,provenance
+identified,342,198,264,804,reported_in_manuscript_v5
+excluded_during_screening,230,103,144,477,reported_in_manuscript_v5
+included_final,112,95,120,327,reported_in_manuscript_v5
+publications_mentioning_system,18,31,54,103,reported_in_manuscript_v5
+publications_with_dss_connection,15,8,42,65,reported_in_manuscript_v5
