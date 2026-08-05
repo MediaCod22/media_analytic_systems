@@ -1,11 +1,12 @@
 # PRISMA 2020 Flow Diagram
 
+> Версия: v1.1.0 | Дата версии: 2026-08-06
+
 ## Textual Representation / Текстовое представление
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
-│  IDENTIFICATION                                             │
-│  Идентификация                                              │
+│  IDENTIFICATION / Идентификация                             │
 │                                                             │
 │  Records identified from databases:                         │
 │  • Google Scholar:                    342                   │
@@ -17,28 +18,17 @@
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  SCREENING                                                  │
-│  Скрининг                                                   │
+│  SCREENING / Скрининг                                       │
 │                                                             │
 │  Records screened (title & abstract):     804               │
 │                                                             │
-│  Records excluded (title & abstract):   477               │
-│  Reasons:                                                   │
-│    • Non-relevant topic (not media analytics)               │
-│    • No access to full text                                 │
-│    • Non-academic publication type                          │
-│    • Duplicate across databases                             │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  ELIGIBILITY                                                │
-│  Доступность                                                │
+│  Records excluded:                        477               │
+│  • Google Scholar:                    230                   │
+│  • eLibrary / РИНЦ:                   103                   │
+│  • CNKI:                              144                   │
 │                                                             │
-│  Full-text articles assessed:           327               │
-│                                                             │
-│  Full-text articles excluded:             0               │
-│  (All assessed records met inclusion criteria)            │
+│  Reasons: non-relevant topic, no access,                    │
+│  non-academic publication type, duplicates                  │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -52,46 +42,33 @@
 │                                                             │
 │  TOTAL included:                        327                 │
 └─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  ADDITIONAL — EXTENDED RUSSIAN CORPUS                       │
-│  Дополнительно — расширенный российский массив              │
-│                                                             │
-│  Extended RINC review:                  477                   │
-│  (For deeper analysis of Russian contour)                   │
-└─────────────────────────────────────────────────────────────┘
 ```
 
 ## Tabular Summary / Сводная таблица
 
 | Stage | Google Scholar | РИНЦ | CNKI | Total | Notes |
-|-------|---------------|------|------|-------|-------|
-| **Identified** | 342 | 198 | 264 | **804** | Initial search across 3 databases |
-| **Screened (title/abstract)** | 342 | 198 | 264 | **804** | Relevance screening |
-| **Excluded (title/abstract)** | 230 | 103 | 144 | **477** | Non-relevant, no access, duplicates |
-| **Full-text assessed** | 112 | 95 | 120 | **327** | Eligibility check |
-| **Excluded (full-text)** | 0 | 0 | 0 | **0** | All met inclusion criteria |
+|-------|---------------:|-----:|-----:|------:|-------|
+| **Identified** | 342 | 198 | 264 | **804** | Initial search across three databases |
+| **Excluded at screening** | 230 | 103 | 144 | **477** | Non-relevant, no access, non-academic type, duplicates |
 | **Included (final corpus)** | 112 | 95 | 120 | **327** | Final analytical sample |
-| **Additional corpus** | — | 477 | — | **477** | Extended RINC for depth |
 
 ## Inclusion Criteria / Критерии включения
 
-1. Публикация посвящена системам медиааналитики, медиамониторинга или медиаметрии
-2. Язык: русский, английский или китайский
-3. Тип: научная статья, конференционный тезис, монография или аналитический отчёт
-4. Период: 2019–2025 (для тематического анализа), 2019–2024 (для динамики DSS)
-5. Доступ к полному тексту для кодирования
+1. Публикация посвящена медиаданным, медиааналитике, медиамониторингу, медиаметрии, OSINT или public opinion monitoring / 舆情监测.
+2. В публикации описывается аналитический продукт либо связь медиаданных с прогнозированием, оценкой риска или поддержкой решений.
+3. Язык: русский, английский или китайский.
+4. Период публикации: 2019–2025.
+5. Доступна информация, достаточная для тематического кодирования.
 
 ## Exclusion Criteria / Критерии исключения
 
-1. Не связана с медиааналитикой (маркетинг без медиа, чистый IT)
-2. Нет доступа к полному тексту
-3. Неакадемический тип (новостная статья, блог)
-4. Дублируется в другой базе данных
-5. Не содержит анализируемого контента (только аннотация)
+1. Неакадемический материал без исследовательского или методологического содержания.
+2. Дубль уже учтённой публикации.
+3. Недостаточно информации для кодирования.
+4. Техническое исследование DSS без медиакоммуникационного контекста.
+5. Медиа или ИИ упоминаются риторически, без анализа медиаданных.
 
 ---
 
-*PRISMA 2020 compliant / Соответствует PRISMA 2020*
-*Diagram generated: 2026-05-14*
+*Adapted PRISMA 2020 protocol / Адаптированный протокол PRISMA 2020*
+*Version date: 2026-08-06*

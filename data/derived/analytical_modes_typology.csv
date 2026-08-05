@@ -1,6 +1,6 @@
-mode_id,mode_name_ru,mode_name_en,russian_example,international_example,chinese_example,main_output
-1,Медиаизмерения,Media measurement,Mediascope,Nielsen,,Внимание; охват; контакт
-2,Национальное медиапокрытие,National media coverage,"Brand Analytics; SCAN-Interfax","Factiva; LexisNexis",Юйцин-платформы,"Наблюдение за медиасистемой; выявление нарративов"
-3,OSINT / data journalism,OSINT / data journalism,OSINT + BA/SCAN,GDELT + OSINT tools,Юйцин-анализ practices,"Реконструкция событий; превращение данных в истории"
-4,Support / predictive analytics,Support / predictive analytics,"Талисман; risk-аналитика","Signal AI; Dataminr","Сина юйцин; Wisers","Сценарии; предупреждение; рекомендация решения"
-5,AI-native layer,AI-native layer,Исследовательские LLM pipelines,"Dataminr; Signal AI",Midu / LLM reporting,Автоматизация извлечения сигнала
+﻿mode_id,mode_name_ru,mode_name_en,russian_example,international_example,chinese_example,main_output
+1,Медиаизмерения,Media measurement,Mediascope,Nielsen,—,Охват; контакт
+2,Мониторинг медиапространства,Media-space monitoring,"Brand Analytics; СКАН","Factiva; LexisNexis",Юйцин-платформы,Мониторинг; нарративы
+3,OSINT и дата-журналистика,OSINT and data journalism,OSINT + BA/СКАН,GDELT + OSINT,Юйцин-анализ,Реконструкция событий
+4,Поддержка решений и предиктивная аналитика,Decision support and predictive analytics,"«Талисман»; риск-аналитика","Signal AI; Dataminr","Sina Yuqing; Wisers",Сценарии; рекомендации
+5,ИИ-нативный режим,AI-native mode,Исследовательские LLM,NetBase Quid,Midu,Ответ на открытый запрос

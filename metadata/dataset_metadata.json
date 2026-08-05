@@ -1,52 +1,87 @@
 {
   "title": "Media Analytics Systems: Open Science Companion Dataset",
-  "description": "Aggregated data, PRISMA protocol, codebook and reproducibility materials for a comparative study of media analytics systems and DSS integration.",
+  "description": "Aggregated data, PRISMA protocol, codebook and reproducibility materials for the descriptive systematic mapping of media analytics and decision support in Russian, international English-language, and Chinese publication corpora.",
   "creator": {
     "name": "Sergey V. Vodopetov",
     "orcid": "0000-0002-5237-4464"
   },
   "repository": "https://github.com/MediaCod22/media_analytic_systems",
-  "date_created": "2026-05-14",
-  "language": ["ru", "en", "zh"],
+  "version": "1.1.0",
+  "date_created": "2026-08-06",
+  "date_modified": "2026-08-06",
+  "language": [
+    "ru",
+    "en",
+    "zh"
+  ],
   "temporal_coverage": "2019-2025",
-  "databases": ["Google Scholar", "eLibrary/RINC", "CNKI"],
+  "databases": [
+    "Google Scholar",
+    "eLibrary/RINC",
+    "CNKI"
+  ],
   "sample": {
     "identified_records": 804,
+    "excluded_at_screening": 477,
     "final_analytical_sample": 327,
     "google_scholar": 112,
     "rinc": 95,
-    "cnki": 120,
-    "expanded_russian_array": 477
+    "cnki": 120
   },
   "main_indicators": {
-    "system_mentions_percent": {
-      "google_scholar": 16,
-      "rinc": 33,
-      "cnki": 45
+    "system_mentions": {
+      "google_scholar": {
+        "count": 18,
+        "percent": 16
+      },
+      "rinc": {
+        "count": 31,
+        "percent": 33
+      },
+      "cnki": {
+        "count": 54,
+        "percent": 45
+      }
     },
-    "dss_link_percent": {
-      "google_scholar": 13,
-      "rinc": 8,
-      "cnki": 35
+    "dss_link": {
+      "google_scholar": {
+        "count": 15,
+        "percent": 13
+      },
+      "rinc": {
+        "count": 8,
+        "percent": 8
+      },
+      "cnki": {
+        "count": 42,
+        "percent": 35
+      }
     },
     "dss_gap_china_russia": 4.4
   },
+  "tools_registry": {
+    "total_tools": 50,
+    "russian": 13,
+    "international": 30,
+    "chinese": 7
+  },
+  "analytical_modes": [
+    "Медиаизмерения",
+    "Мониторинг медиапространства",
+    "OSINT и дата-журналистика",
+    "Поддержка решений и предиктивная аналитика",
+    "ИИ-нативный режим"
+  ],
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
-  "access_rights": "Open aggregated data; bibliographic metadata only. Full-text publications not redistributed per copyright law and publisher agreements.",
+  "access_rights": "Open aggregated data; anonymized coding excerpt only. Full-text publications and protected database exports are not redistributed.",
   "intercoder_reliability": {
-    "coders": 3,
     "sample_size": 33,
+    "independent_coders": 2,
+    "adjudicator": 1,
     "cohens_kappa": {
       "dss_link": 0.91,
-      "thematic_classification": 0.84,
-      "mode_assignment": 0.79
+      "thematic_classification": 0.84
     }
-  },
-  "tools_registry": {
-    "total_tools": 52,
-    "russian": 18,
-    "international": 24,
-    "chinese": 10
   }
 }

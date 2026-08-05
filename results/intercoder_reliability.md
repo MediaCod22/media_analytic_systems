@@ -1,61 +1,49 @@
 # Inter-Coder Reliability Report
 
+> Version: v1.1.0 | Version date: 2026-08-06
+
 ## Overview
 
-This report documents the inter-coder reliability assessment for the media analytics systems research. Reliability was evaluated through blind independent coding by three coders on a random sample of publications.
+This report documents the reliability check for the descriptive systematic mapping of media analytics and decision support. Reliability was evaluated on a random 10% subsample of the final analytical corpus.
 
 ## Procedure
 
-1. **Sample selection:** Random 10% sample (N=33) from the final analytical corpus of 327 publications
-2. **Coders:** 3 independent coders with training in media studies and content analysis
-3. **Blind coding:** Coders worked independently without knowledge of others' assignments
-4. **Codebook:** Structured codebook with operational definitions (see `methodology/codebook.md`)
-5. **Disagreement resolution:** Consensus sessions for cases with coder disagreement
+1. **Sample selection:** random subsample of 33 publications from the final corpus of 327.
+2. **Independent coding:** two coders independently assigned DSS-link and analytical-mode codes.
+3. **Codebook:** operational definitions are provided in `methodology/codebook.md`.
+4. **Adjudication:** a third expert resolved all cases of disagreement.
+5. **Calculation:** Cohen's Kappa was calculated for the binary DSS indicator and the nominal five-category mode indicator.
 
 ## Results
 
-### Cohen's Kappa Values
-
 | Dimension | Cohen's Kappa | Landis & Koch Level | N |
-|-----------|---------------|---------------------|---|
+|---|---:|---|---:|
 | DSS-link determination | **0.91** | Almost perfect | 33 |
-| Thematic classification | **0.84** | Almost perfect | 33 |
-| Mode assignment | **0.79** | Substantial | 33 |
-| AI-component identification | **0.76** | Substantial | 33 |
-| System mention coding | **0.88** | Almost perfect | 33 |
+| Thematic mode classification | **0.84** | Almost perfect | 33 |
 
 ### Interpretation
 
-Per Landis & Koch (1977):
-- **0.81–1.00:** Almost perfect agreement
-- **0.61–0.80:** Substantial agreement
-- **0.41–0.60:** Moderate agreement
-- **0.21–0.40:** Fair agreement
-- **0.00–0.20:** Slight agreement
-- **< 0.00:** Poor agreement
+Per Landis & Koch (1977), values above 0.80 indicate almost perfect agreement. The reported values support the reliability of the two article-level coding dimensions.
 
-All dimensions exceed the threshold of "substantial agreement" (≥0.61), with DSS-link and system mention coding reaching "almost perfect" levels.
+## Data and Script
 
-## Raw Data
-
-Raw coding data is available in:
-- `data/derived/intercoder_sample.csv` — blind-coded sample with two coders
-- `scripts/calculate_kappa.py` — calculation script
+- `data/derived/intercoder_sample.csv` — anonymized 33-record reliability sample;
+- `scripts/calculate_kappa.py` — binary and nominal Kappa calculation;
+- `data/derived/intercoder_reliability.csv` — reported summary values.
 
 ## Limitations
 
-1. **Sample size:** 10% sample (N=33) balances thoroughness with practical constraints
-2. **Two-coder comparison:** Primary reliability calculated between two main coders; third coder used for tie-breaking
-3. **Binary DSS coding:** Simplified to binary (yes/no); nuanced cases discussed in consensus sessions
-4. **Mode nominal coding:** Five categories require full confusion matrix for precise Kappa; reported values use simplified calculation
+1. The reliability file is anonymized and does not include protected full-text material.
+2. DSS coding is binary; nuanced cases were adjudicated by the third expert.
+3. Mode coding uses five nominal categories and full marginal-based Kappa calculation.
+4. The reliability sample documents coding consistency; it is not an additional analytical corpus.
 
 ## References
 
-Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33(1), 159–174.
-
 Cohen, J. (1960). A coefficient of agreement for nominal scales. *Educational and Psychological Measurement*, 20(1), 37–46.
+
+Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33(1), 159–174.
 
 ---
 
-*Report generated: 2026-05-14*
-*Codebook version: 1.0*
+*Report version: v1.1.0 | Version date: 2026-08-06*
