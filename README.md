@@ -176,16 +176,9 @@ Raw coding data and calculation scripts are available:
 
 ---
 
-## 📚 How to Cite
-
-### APA 7
-Vodopetov, S. V. (2025). *Modes of analytical work with media data: From measurement to decision support*. Vestnik PGU. https://github.com/MediaCod22/media_analytic_systems
-
-### ГОСТ Р 7.0.5-2008
-Водопетов С.В. Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений // Вестник ПГУ. — 2025. — № X. — С. XX–XX.
 
 **Recommended repository citation for data reuse:**
-> Vodopetov, S. V. (2025). Media Analytics Systems Research Data Repository (Version 1.0.0) [Data set]. GitHub. https://github.com/MediaCod22/media_analytic_systems
+> Vodopetov, S. V. (2026). Media Analytics Systems Research Data Repository (Version 1.0.0) [Data set]. GitHub. https://github.com/MediaCod22/media_analytic_systems
 
 ---
 
