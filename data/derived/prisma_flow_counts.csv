@@ -1,9 +1,5 @@
-stage,google_scholar,rinc,cnki,total,exclusion_reason
+﻿stage,google_scholar,rinc,cnki,total,exclusion_reason
 identified,342,198,264,804,initial search across three databases
-duplicates_removed,0,0,0,0,not applicable — cross-database duplicates removed at screening stage
-screened_title_abstract,342,198,264,804,screening by title and abstract for relevance to media analytics
-excluded_title_abstract,230,103,144,477,"non-relevant topic (not media analytics), no access to full text, non-academic publication type"
-full_text_assessed,112,95,120,327,full-text assessment for analytical relevance
-excluded_full_text,0,0,0,0,all assessed records met inclusion criteria (no exclusions at full-text stage)
+screened_title_abstract,342,198,264,804,combined title and abstract screening
+excluded_title_abstract,230,103,144,477,"non-relevant topic, no access to full text, non-academic publication type, duplicates"
 included_final,112,95,120,327,"final analytical corpus: publications with analyzable content on media analytics systems"
-additional_russian_corpus,0,477,0,477,extended RINC review for deeper Russian contour analysis

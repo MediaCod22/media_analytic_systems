@@ -1,13 +1,14 @@
 # Media Analytics Systems — Research Data Repository
 
-> **Research:** «Режимы аналитической работы с медиаданными: от измерений к поддержке принятия решений»
-> 
+> **Research:** «Медиааналитика и поддержка принятия решений в научном дискурсе: систематическое картирование российского, англоязычного и китайского корпусов публикаций»
+>
 > **Author:** Sergey V. Vodopetov, PhD (RUDN University, Moscow)
-> 
+>
 > **ORCID:** [0000-0002-5237-4464](https://orcid.org/0000-0002-5237-4464) | **RSCI ID:** 835749 | **SPIN:** 5530-2581
 
 [![Open Science](https://img.shields.io/badge/Open%20Science-FAIR-blue)](https://www.go-fair.org/fair-principles/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Version](https://img.shields.io/badge/version-v1.1.0-blue.svg)](https://github.com/MediaCod22/media_analytic_systems)
 
 ---
 
@@ -15,114 +16,114 @@
 
 ### What We Studied / Что исследовалось
 
-This study examines the relationship between media analytics practices and decision-making frameworks across three academic discourses: **Russian, International (English), and Chinese**. The analysis focuses on how publications in each contour conceptualize the connection between media data analysis and decision support systems (DSS).
+The repository accompanies a descriptive systematic mapping of scholarly discourse on media analytics and decision support. The article compares three independently formed publication corpora — **Russian (eLibrary/РИНЦ), international English-language (Google Scholar), and Chinese (CNKI)** — rather than national markets, platform quality, or the actual effectiveness of particular systems.
 
-**Research question:** How does the frequency of DSS-linking in media analytics publications differ across Russian, international, and Chinese academic discourses?
+**Research question:** How is the connection between media analytics and decision support represented in the Russian, international, and Chinese publication corpora?
 
 ### Research Design / Дизайн исследования
 
-- **Corpus:** 804 publications identified → 327 final analytical sample (PRISMA 2020 protocol)
-- **Databases:** Google Scholar (international), eLibrary/РИНЦ (Russian), CNKI (Chinese)
-- **Period:** 2019–2024 (dynamics), 2019–2025 (thematic scope)
-- **Extended corpus:** 477 additional Russian publications for contour-specific analysis
-- **Coding:** Thematic analysis (Braun & Clarke) with structured codebook
-- **Inter-coder reliability:** Cohen's Kappa = 0.84 (thematic classification), 0.91 (DSS-link)
+- **Corpus:** 804 records identified → 477 excluded at screening → 327 publications in the final analytical sample
+- **Final sample:** 112 Google Scholar, 95 eLibrary/РИНЦ, 120 CNKI
+- **Period:** 2019–2025
+- **Method:** descriptive systematic mapping with an adapted PRISMA 2020 selection protocol
+- **Coding:** thematic coding by four features — media-data type, system purpose, analytical product, and DSS connection
+- **Reliability check:** random 10% subsample (N=33); two independent coders, with a third expert resolving disagreements
+- **Cohen's Kappa:** 0.91 (DSS connection), 0.84 (thematic classification)
 
 ### Key Observations / Ключевые наблюдения
 
-The data indicate varying patterns of DSS-link representation across contours:
+| Corpus | Publications | Publications mentioning systems | Publications with DSS connection |
+|---|---:|---:|---:|
+| Google Scholar / international English-language | 112 | 18 (≈16%) | 15 (≈13%) |
+| eLibrary/РИНЦ / Russian | 95 | 31 (≈33%) | 8 (≈8%) |
+| CNKI / Chinese | 120 | 54 (45%) | 42 (35%) |
 
-| Contour | System mentions | DSS-link | DSS dynamics 2019–2024 |
-|---------|----------------|----------|----------------------|
-| Google Scholar | 16% | 13% | 8% → 14% |
-| РИНЦ | 33% | 8% | 2% → 3% |
-| CNKI | 45% | 35% | 28% → 37% |
-
-The Russian corpus demonstrates higher representation of measurement and monitoring modes, while the Chinese corpus shows higher DSS-link frequency. These patterns are descriptive and require further contextual interpretation.
+These indicators describe the formed scholarly corpora. They must not be interpreted as market shares, platform quality scores, or measures of national technological development.
 
 ### Analytical Modes Typology / Типология аналитических режимов
 
-The study identifies five conceptual modes of working with media data, based on the analytical outputs described in publications:
+The study identifies five modes of working with media data, distinguished by the analytical product described in publications:
 
-| Mode | Representative systems | Primary analytical output |
-|------|----------------------|-------------------------|
-| **Media Measurement** | Mediascope, Nielsen | Attention, reach, contact metrics |
-| **National Media Coverage** | Brand Analytics, СКАН, Factiva, LexisNexis, Yuqing platforms | System observation, narrative identification |
-| **OSINT / Data Journalism** | GDELT, OSINT tools | Event reconstruction |
-| **Support / Predictive** | Signal AI, Dataminr, Талисман | Scenarios, early warning signals |
-| **AI-Native Layer** | Midu, NetBase Quid | Automated signal extraction |
+| Mode | Russian example | International example | Chinese example | Analytical product |
+|---|---|---|---|---|
+| **Media measurement / Медиаизмерения** | Mediascope | Nielsen | — | Reach and contact metrics |
+| **Media-space monitoring / Мониторинг медиапространства** | Brand Analytics, СКАН | Factiva, LexisNexis | Yuqing platforms | Mentions, topics, dynamics, narratives |
+| **OSINT and data journalism / OSINT и дата-журналистика** | OSINT + BA/СКАН | GDELT + OSINT | Yuqing analysis | Event reconstruction |
+| **Decision support and predictive analytics / Поддержка решений и предиктивная аналитика** | Talisman, risk analytics | Signal AI, Dataminr | Sina Yuqing, Wisers | Forecasts, risk assessments, scenarios, recommendations |
+| **AI-native mode / ИИ-нативный режим** | Research LLMs | NetBase Quid | Midu | Contextual answer to an open query |
 
-*Note: Mode assignments reflect dominant analytical outputs described in the literature, not evaluative rankings.*
+*Note: the typology is not a ranking, software classification, market-maturity model, or sequence of obligatory developmental stages.*
 
 ---
 
-## 📊 Complete Tools Registry (52 Systems)
+## 📊 Complete Tools Registry (50 Systems)
 
 **[→ View Full Registry with Weights](TOOLS_REGISTRY.md)**
 
-| Contour | Count | Key Systems |
-|---------|-------|-------------|
-| 🇷🇺 Russian | 18 | Mediascope, Brand Analytics, СКАН, Kribrum, YouScan, IQBuzz, Талисман, Semantrum |
-| 🌍 International | 24 | Nielsen, Factiva, LexisNexis, Brandwatch, Meltwater, Sprinklr, GDELT, Signal AI, Dataminr |
-| 🇨🇳 Chinese | 10 | Midu, Sina Yuqing, Wisers, Qingbo, People's Daily Yuqing |
+| Corpus | Count | Systems |
+|---|---:|---|
+| 🇷🇺 Russian | 13 | Mediascope; Brand Analytics; СКАН-Интерфакс; Талисман; Kribrum; Medialogia/Медиалогия; YouScan; IQBuzz; Инфосфера; Постман; Semantrum; Полигон; Dalion |
+| 🌍 International | 30 | Nielsen; Factiva; LexisNexis; GDELT; Signal AI; Dataminr; Brandwatch; Meltwater; Sprinklr; Talkwalker; Synthesio; Cision; Pulsar; Mention; Hootsuite Insights; Sprout Social; NetBase Quid; Digimind; Agorapulse; Emplifi; Khoros; Reputation.com; Keyhole; Radian6; Buffer Analyze; Later; Traackr; Onalytica; Awario; Zoho Social |
+| 🇨🇳 Chinese | 7 | Midu; Sina Yuqing; Wisers; Qingbo; People’s Daily Yuqing; Shiwei; Zhongke Click |
 
-The registry presents 52 media analytics systems with normalized frequency weights derived from the scientific corpus. Weights indicate relative frequency of mention within each contour, not market share or functional quality.
+The registry presents the final 50-system version used in the article. Weights indicate normalized mention frequency within each publication corpus, not market share or functional quality.
 
 ---
 
 ## 📁 Repository Structure
 
-```
+```text
 media_analytic_systems/
 ├── README.md                              # Overview and research context
 ├── README_OPEN_SCIENCE.md                 # Open Science companion documentation
-├── TOOLS_REGISTRY.md                      # Full registry: 52 tools with weights
-├── CITATION.cff                           # Citation metadata
+├── TOOLS_REGISTRY.md                      # Final registry: 50 tools with weights
 ├── LICENSE                                # CC BY 4.0
 │
 ├── data/
 │   ├── derived/
 │   │   ├── publication_statistics.csv     # Corpus-level statistics
-│   │   ├── dss_comparison.csv             # DSS-link frequency by contour
-│   │   ├── analytical_modes_typology.csv  # Mode classification table
+│   │   ├── dss_comparison.csv             # DSS-link indicators by corpus
+│   │   ├── analytical_modes_typology.csv  # Five-mode typology
 │   │   ├── prisma_flow_counts.csv         # PRISMA selection stages
-│   │   ├── tools_registry_full.csv        # 52 tools with weights
-│   │   ├── intercoder_reliability.csv     # Inter-coder agreement statistics
-│   │   └── intercoder_sample.csv          # Blind-coded sample for verification
-│   └── processed/
-│       └── master_publications_coded.csv  # Master dataset (anonymized)
+│   │   ├── tools_registry_full.csv        # 50 tools with weights
+│   │   ├── intercoder_reliability.csv     # Reported Kappa values
+│   │   └── intercoder_sample.csv          # Anonymized reliability sample
+│   ├── processed/
+│   │   └── master_publications_coded.csv  # Anonymized coding-frame excerpt (100 records)
+│   └── raw_placeholder/
+│       └── README.md                      # Raw-data placement and access policy
 │
 ├── tables/
-│   ├── table_1_comparative_sample.csv     # Table 1 from article
-│   ├── table_2_analytical_modes.csv       # Table 2 from article
-│   ├── table_3_tools_registry.csv         # Tools summary
+│   ├── table_1_comparative_sample.csv     # Corpus comparison table
+│   ├── table_2_analytical_modes.csv       # Mode characteristics table
+│   ├── table_3_tools_registry.csv         # Tools registry CSV
 │   └── prisma_flow_table.csv              # PRISMA stages summary
 │
 ├── methodology/
-│   ├── prisma_protocol.md                 # PRISMA 2020 protocol
+│   ├── prisma_protocol.md                 # Adapted PRISMA 2020 protocol
 │   ├── search_strategy.md                 # Database search strings
 │   ├── codebook.md                        # Coding definitions and operational rules
-│   ├── reproducibility_protocol.md
-│   ├── limitations_and_bias.md
+│   ├── reproducibility_protocol.md        # Indicator calculation rules
+│   ├── limitations_and_bias.md            # Limitations and interpretation boundaries
 │   ├── tools_identification_protocol.md   # Tool identification procedure
 │   └── why_h_index_was_not_used.md        # Methodological note on h-index
 │
 ├── figures/
-│   └── prisma_flow_diagram.md             # PRISMA flowchart
+│   └── prisma_flow_diagram.md             # Textual PRISMA flowchart
 │
 ├── results/
-│   ├── key_findings_open_science.md
-│   ├── interpretation_notes.md
-│   └── intercoder_reliability.md          # Inter-coder reliability report
+│   ├── key_findings_open_science.md       # Corpus-bound key findings
+│   ├── interpretation_notes.md            # Interpretation notes
+│   └── intercoder_reliability.md          # Reliability report
 │
 ├── scripts/
 │   ├── validate_tables.py                 # Table validation script
 │   └── calculate_kappa.py                 # Cohen's Kappa calculation script
 │
 ├── metadata/
-│   ├── CITATION.cff
-│   ├── codemeta.json
-│   └── dataset_metadata.json
+│   ├── CITATION.cff                       # Citation metadata
+│   ├── codemeta.json                      # Code metadata
+│   └── dataset_metadata.json              # Dataset metadata
 │
 └── docs/
     ├── open_science_checklist.md
@@ -134,34 +135,42 @@ media_analytic_systems/
 ## 🔬 Methodology
 
 ### PRISMA Protocol
-Systematic literature selection from three databases following PRISMA 2020 guidelines. See `methodology/prisma_protocol.md` and `figures/prisma_flow_diagram.md` for full selection flow.
 
-**Key numbers:**
-- **804** → initial search results
-- **327** → final analytical sample (112 Google Scholar, 95 РИНЦ, 120 CNKI)
-- **477** → extended Russian corpus for contour-specific analysis
+Systematic selection from three databases follows an adapted PRISMA 2020 logic. See `methodology/prisma_protocol.md` and `figures/prisma_flow_diagram.md`.
+
+| Stage | Google Scholar | РИНЦ | CNKI | Total |
+|---|---:|---:|---:|---:|
+| Records identified | 342 | 198 | 264 | **804** |
+| Excluded at screening | 230 | 103 | 144 | **477** |
+| Final analytical sample | 112 | 95 | 120 | **327** |
+
+### DSS Connection vs. Analytical Mode
+
+Присвоение основного тематического режима и кодирование DSS-связи представляли собой две самостоятельные аналитические процедуры. Тематический режим определялся по доминирующей постановке проблемы и характеру рассматриваемого аналитического продукта. DSS-связь кодировалась более узко — только при наличии в публикации явного перехода от результата анализа к оценке риска, прогнозированию, рекомендации или выбору действия. Поэтому публикации режима поддержки решений не во всех случаях получали значение DSS = 1, тогда как отдельные публикации, отнесённые к мониторинговому или ИИ-нативному режиму, могли содержать явную DSS-связь.
 
 ### Inter-Coder Reliability
 
-Verified through independent blind coding by **3 coders** on a random sample of 33 publications (10%):
+Reliability was checked on a random 10% subsample (N=33). Two coders independently coded DSS connection and thematic mode; a third expert resolved disagreements.
 
-| Dimension | Cohen's Kappa | Landis & Koch level |
-|-----------|---------------|---------------------|
-| DSS-link determination | **0.91** | Almost perfect |
+| Dimension | Cohen's Kappa | Interpretation |
+|---|---:|---|
+| DSS connection | **0.91** | Almost perfect |
 | Thematic classification | **0.84** | Almost perfect |
-| Mode assignment | **0.79** | Substantial |
-| AI-component identification | **0.76** | Substantial |
-| System mention coding | **0.88** | Almost perfect |
 
-Raw coding data and calculation scripts are available:
-- `data/derived/intercoder_sample.csv` — blind-coded sample
-- `scripts/calculate_kappa.py` — Kappa calculation
-- `results/intercoder_reliability.md` — full reliability report
+Materials:
+
+- `data/derived/intercoder_sample.csv` — anonymized 33-record reliability sample;
+- `scripts/calculate_kappa.py` — binary and nominal Kappa calculation;
+- `results/intercoder_reliability.md` — full reliability report.
+
+### Data Availability Note
+
+Article-level totals are calculated for the full 327-publication corpus. The file `data/processed/master_publications_coded.csv` is an anonymized 100-record coding-frame excerpt provided to document the coding schema; it is not a substitute for the complete corpus. Full texts and protected database exports are not redistributed.
 
 ### Why We Don't Use H-Index for Systems
 
-> ⚠️ **Methodological note:** The final version does not use h-index of platforms as a quality indicator. Initial bibliometric evaluations are preserved only as auxiliary heuristics for scientific visibility and do not participate in main conclusions.
-> 
+> ⚠️ **Methodological note:** the final version does not use platform h-index as a quality indicator. Initial bibliometric evaluations are retained only as auxiliary heuristics of scholarly visibility and do not participate in the article's conclusions.
+>
 > See: `methodology/why_h_index_was_not_used.md`
 
 ---
@@ -172,23 +181,33 @@ Raw coding data and calculation scripts are available:
 
 **Scripts:** MIT License (see individual file headers)
 
-**Note:** This repository contains derived data and anonymized metadata only. Full-text publications are not redistributed in compliance with copyright law and publisher agreements.
+**Note:** this repository contains derived data and anonymized metadata only. Full-text publications are not redistributed in compliance with copyright law and database terms.
 
 ---
 
+## 📚 How to Cite
 
-**Recommended repository citation for data reuse:**
-> Vodopetov, S. V. (2026). Media Analytics Systems Research Data Repository (Version 1.0.0) [Data set]. GitHub. https://github.com/MediaCod22/media_analytic_systems
+### Dataset citation (APA 7)
+
+Vodopetov, S. V. (2026). *Media Analytics Systems Research Data Repository* (Version 1.1.0) [Data set]. GitHub. https://github.com/MediaCod22/media_analytic_systems
+
+### ГОСТ Р 7.0.5-2008
+
+Водопетов С.В. Media Analytics Systems Research Data Repository: набор данных и материалы воспроизводимости. Версия 1.1.0. GitHub, 2026. URL: https://github.com/MediaCod22/media_analytic_systems (дата обращения: 06.08.2026).
+
+### Associated manuscript
+
+Водопетов С.В. Медиааналитика и поддержка принятия решений в научном дискурсе: систематическое картирование российского, англоязычного и китайского корпусов публикаций. Рукопись научной статьи.
 
 ---
 
 ## 📦 Release
 
-- **Current version:** v1.0.0
-- **Release date:** 2026-05-14
-- **Archive:** Available via GitHub Releases
+- **Current version:** v1.1.0
+- **Version date:** 2026-08-06
+- **Archive:** GitHub Releases
 
 ---
 
-*Repository created: 2026-05-14 | Last updated: 2026-05-14*
-*This repository follows FAIR principles and PRISMA 2020 guidelines*
+*Repository version: v1.1.0 | Version date: 2026-08-06*
+*This repository follows FAIR principles and uses an adapted PRISMA 2020 selection protocol*

@@ -1,6 +1,3 @@
-dimension,coders,n_items,cohens_kappa,landis_koch_level,interpretation,notes
-DSS-связь,3,33,0.91,Almost perfect,Практически полное согласие,Ключевое измерение для главного тезиса статьи
-Тематический режим,3,33,0.84,Almost perfect,Практически полное согласие,Классификация по 5 аналитическим режимам
-AI-компонент,3,33,0.79,Substantial,Субстанциальное согласие,Идентификация AI-элементов в публикациях
-OSINT-компонент,3,33,0.76,Substantial,Субстанциальное согласие,Выявление OSINT-методологии
-Упоминание системы,3,33,0.88,Almost perfect,Практически полное согласие,Фиксация упоминаний платформ
+﻿dimension,n_items,independent_coders,adjudicator,cohens_kappa,landis_koch_level,interpretation
+DSS-связь,33,2,1,0.91,Almost perfect,Практически полное согласие
+Тематический режим,33,2,1,0.84,Almost perfect,Практически полное согласие
