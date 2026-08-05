@@ -1,0 +1,7 @@
+analytical_mode,google_scholar_n,google_scholar_pct,rinc_n,rinc_pct,cnki_n,cnki_pct,total_n,total_pct,provenance
+media_measurement,24,21.4,25,26.3,18,15.0,67,20.5,reported_in_manuscript_v5
+media_space_monitoring,26,23.2,34,35.8,35,29.2,95,29.1,reported_in_manuscript_v5
+osint_and_data_journalism,20,17.9,14,14.7,14,11.7,48,14.7,reported_in_manuscript_v5
+decision_support_and_predictive_analytics,27,24.1,14,14.7,35,29.2,76,23.2,reported_in_manuscript_v5
+open_query_ai,15,13.4,8,8.4,18,15.0,41,12.5,reported_in_manuscript_v5
+total,112,100.0,95,100.0,120,100.0,327,100.0,reported_in_manuscript_v5
